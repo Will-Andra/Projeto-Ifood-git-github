@@ -1,7 +1,9 @@
 package com.example.ifoodgithub
 
+import android.content.Intent
 import android.net.http.UrlRequest
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,7 +22,22 @@ class Restaurantes : AppCompatActivity() {
 
         title = "Restaurantes"
 
+        binding.imgMcDonalds.setOnClickListener {
+            Toast.makeText(this,
+                "Mc Donalds não disponível no momento",
+                Toast.LENGTH_SHORT)
+                .show()
+        }
 
+        binding.imgOutback.setOnClickListener{
 
+            //Aguardando implementação
+            //startActivity(Intent(this, DetalhesRestaurante::class.java))
+
+            Toast.makeText(this,
+                "Aguardando: Tela Detalhes de restaurante",
+                Toast.LENGTH_SHORT)
+                .show()
+        }
     }
 }
