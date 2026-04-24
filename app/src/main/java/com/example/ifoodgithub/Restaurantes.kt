@@ -1,25 +1,26 @@
 package com.example.ifoodgithub
 
-import android.content.Intent
+import android.net.http.UrlRequest
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.ifoodgithub.databinding.ActivityMainBinding
+import com.example.ifoodgithub.databinding.ActivityRestaurantesBinding
 
-class MainActivity : AppCompatActivity() {
+class Restaurantes : AppCompatActivity() {
 
-private val binding by lazy {
-    ActivityMainBinding.inflate(layoutInflater)
-}
+  private val binding by lazy {
+     ActivityRestaurantesBinding.inflate(layoutInflater)
+  }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.btnChamaRestaurante.setOnClickListener {
-            startActivity(Intent(this, Restaurantes::class.java))
-        }
+        title = "Restaurantes"
+
+
+
     }
 }
