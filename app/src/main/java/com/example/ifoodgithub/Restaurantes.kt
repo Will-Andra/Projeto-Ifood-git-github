@@ -33,7 +33,6 @@ class Restaurantes : AppCompatActivity() {
 
             //Aguardando implementação
             //startActivity(Intent(this, DetalhesRestaurante::class.java))
-
             Toast.makeText(this,
                 "Aguardando: Tela Detalhes de restaurante",
                 Toast.LENGTH_SHORT)
