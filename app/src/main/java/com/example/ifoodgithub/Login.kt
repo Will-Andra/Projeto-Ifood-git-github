@@ -18,7 +18,9 @@ private val binding by lazy {
         setContentView(binding.root)
 
         binding.btnChamaRestaurante.setOnClickListener {
-           // startActivity(Intent(this, Restaurantes::class.java))
+
+            // startActivity(Intent(this, Restaurantes::class.java))
+
             Toast.makeText(this, "Chama Tela Restaurantes", Toast.LENGTH_SHORT).show()
         }
     }
