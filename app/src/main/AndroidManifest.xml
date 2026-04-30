@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IfoodGitHub">
         <activity
+            android:name=".DetalheRestauranteActivity"
             android:name=".ConfirmacaoActivity"
             android:exported="true">
             <intent-filter>
