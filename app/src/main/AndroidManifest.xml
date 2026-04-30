@@ -13,6 +13,7 @@
         android:theme="@style/Theme.IfoodGitHub">
         <activity
             android:name=".DetalheRestauranteActivity"
+            android:name=".ConfirmacaoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
