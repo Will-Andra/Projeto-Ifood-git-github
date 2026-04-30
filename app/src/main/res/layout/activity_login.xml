@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:foregroundTint="#FDFDFD"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <Button
         android:id="@+id/btnChamaRestaurante"

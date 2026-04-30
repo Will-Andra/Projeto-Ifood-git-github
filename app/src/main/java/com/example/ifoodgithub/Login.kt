@@ -2,16 +2,15 @@ package com.example.ifoodgithub
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.ifoodgithub.databinding.ActivityMainBinding
+import com.example.ifoodgithub.databinding.ActivityLoginBinding
 
-class MainActivity : AppCompatActivity() {
+
+class Login : AppCompatActivity() {
 
 private val binding by lazy {
-    ActivityMainBinding.inflate(layoutInflater)
+    ActivityLoginBinding.inflate(layoutInflater)
 }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,8 @@ private val binding by lazy {
         setContentView(binding.root)
 
         binding.btnChamaRestaurante.setOnClickListener {
-            startActivity(Intent(this, Restaurantes::class.java))
+           // startActivity(Intent(this, Restaurantes::class.java))
+            Toast.makeText(this, "Chama Tela Restaurantes", Toast.LENGTH_SHORT).show()
         }
     }
 }
