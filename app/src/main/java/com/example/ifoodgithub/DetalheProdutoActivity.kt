@@ -26,5 +26,9 @@ class DetalheProdutoActivity : AppCompatActivity() {
         binding.btnAdicionar.setOnClickListener {
             startActivity(Intent(this,ConfirmacaoActivity::class.java))
         }
+
+        binding.fabVoltar.setOnClickListener {
+            finish()
+        }
     }
 }
