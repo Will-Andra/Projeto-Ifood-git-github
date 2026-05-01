@@ -14,7 +14,7 @@
 
         <!-- NOVA TELA PRINCIPAL -->
         <activity
-            android:name=".DetalheRestauranteActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +23,7 @@
         </activity>
 
         <!-- OUTRAS ACTIVITIES -->
+        <activity android:name=".DetalheRestauranteActivity" />
         <activity android:name=".DetalheProdutoActivity" />
         <activity android:name=".ConfirmacaoActivity" />
 
