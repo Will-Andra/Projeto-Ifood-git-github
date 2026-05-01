@@ -18,11 +18,13 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <!-- OUTRAS ACTIVITIES -->
+        <activity  android:name=".Restaurantes" />
         <activity android:name=".DetalheRestauranteActivity" />
         <activity android:name=".DetalheProdutoActivity" />
         <activity android:name=".ConfirmacaoActivity" />
