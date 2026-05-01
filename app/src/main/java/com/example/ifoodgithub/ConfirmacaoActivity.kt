@@ -1,6 +1,8 @@
 package com.example.ifoodgithub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,8 +24,18 @@ class ConfirmacaoActivity : AppCompatActivity() {
             insets
         }
 
+        title = "Confirmação"
+
         binding.imgVoltar.setOnClickListener {
+
+            startActivity(Intent(this, DetalheProdutoActivity::class.java))
             finish()
         }
+
+        binding.button.setOnClickListener {
+            Toast.makeText(this,"Pedido Confirmado",Toast.LENGTH_SHORT).show()
+            finish()
+        }
+
     }
 }

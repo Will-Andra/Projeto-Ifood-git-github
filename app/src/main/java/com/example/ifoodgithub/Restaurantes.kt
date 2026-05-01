@@ -29,14 +29,22 @@ class Restaurantes : AppCompatActivity() {
                 .show()
         }
 
+        binding.imgBk.setOnClickListener {
+            //Aguardando implementação
+            startActivity(Intent(this, DetalheRestauranteActivity::class.java))
+        }
+
+
         binding.imgOutback.setOnClickListener{
 
             //Aguardando implementação
-            //startActivity(Intent(this, DetalhesRestaurante::class.java))
             Toast.makeText(this,
-                "Aguardando: Tela Detalhes de restaurante",
+                "Outback não disponível no momento",
                 Toast.LENGTH_SHORT)
                 .show()
         }
+
+
+
     }
 }

@@ -4,8 +4,8 @@
     <color name="branco">#FFFFFF</color>
     <color name="preto">#000000</color>
 
-    <color name="primaria">#FF4004</color>
-    <color name="primaria_variacao">#AA040F</color>
+    <color name="primaria">#F10202</color>
+    <color name="primaria_variacao">#F20F0F</color>
     <color name="secundaria">#FF5722</color>
     <color name="fundo">#FBF9FB</color>
     <color name="menu_navegacao">@color/branco</color>

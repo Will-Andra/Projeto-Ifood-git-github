@@ -23,7 +23,14 @@ class DetalheRestauranteActivity : AppCompatActivity() {
             insets
         }
 
-        binding.imageView.setOnClickListener {
+        title = "Detalhe do Restaurante"
+
+        binding.textVoltaRestaurante.setOnClickListener {
+            startActivity(Intent(this, Restaurantes::class.java))
+            finish()
+        }
+
+        binding.txtHamburger .setOnClickListener {
             startActivity(Intent(this, DetalheProdutoActivity::class.java))
         }
     }

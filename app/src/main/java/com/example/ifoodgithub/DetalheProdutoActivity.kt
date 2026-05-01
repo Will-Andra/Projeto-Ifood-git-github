@@ -23,11 +23,14 @@ class DetalheProdutoActivity : AppCompatActivity() {
             insets
         }
 
+        title = "Detalhe do Produto"
+
         binding.btnAdicionar.setOnClickListener {
             startActivity(Intent(this,ConfirmacaoActivity::class.java))
         }
 
-        binding.fabVoltar.setOnClickListener {
+        binding.textChamaRestaurante.setOnClickListener {
+           startActivity(Intent(this,DetalheRestauranteActivity::class.java))
             finish()
         }
     }

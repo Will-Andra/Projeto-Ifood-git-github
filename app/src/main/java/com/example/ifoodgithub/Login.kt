@@ -17,11 +17,11 @@ private val binding by lazy {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        title = "ifood"
         binding.btnChamaRestaurante.setOnClickListener {
 
-            // startActivity(Intent(this, Restaurantes::class.java))
+             startActivity(Intent(this, Restaurantes::class.java))
 
-            Toast.makeText(this, "Chama Tela Restaurantes", Toast.LENGTH_SHORT).show()
         }
     }
 }
